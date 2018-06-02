@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>ZeroTier</Name>
+  <Description>
+    ZeroTier is a smart programmable Ethernet switch for planet Earth. [br]
+    It replaces the physical LAN/WAN boundary with a virtual one, allowing devices of any type [br]
+    at any location to be managed as if they all reside in the same cloud region or data center. [br]
+    All traffic is encrypted end-to-end and takes the most direct path available for minimum latency and maximum performance.
+  </Description>
+  <Overview>
+    ZeroTier is a smart programmable Ethernet switch for planet Earth. It replaces the physical LAN/WAN boundary with a virtual one, allowing devices of any type at any location to be managed as if they all reside in the same cloud region or data center. All traffic is encrypted end-to-end and takes the most direct path available for minimum latency and maximum performance.
+  </Overview>
+  <Support></Support>
+  <Registry>https://registry.hub.docker.com/u/spikhalskiy/zerotier/</Registry>
+  <GitHub>https://github.com/Spikhalskiy/zerotier-unraid-docker.git</GitHub>
+  <Repository>spikhalskiy/zerotier</Repository>
+  <WebUI></WebUI>
+  <Banner>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/images/zerotier_ico.png</Banner>
+  <Icon>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/images/zerotier_ico.png</Icon>
+  <Beta>False</Beta>
+  <Category>Network:DNS Network:Management Network:Other</Category>
+  <Date>2018-06-01</Date>
+
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+  </Networking>
+  <!-- Variable Mappings -->
+  <Config Name="Network ID" Target="NETWORK_ID" Default="" Mode="" Description="Network ID of ZeroTier network to join, could be find on page: https://my.zerotier.com/network" Type="Variable" Display="always-hide" Required="true" Mask="false"/>
+  <!-- Volume Mappings -->
+  <Config Name="Config Directory" Target="/var/lib/zerotier-one" Default="/mnt/user/appdata/zerotier/zerotier-one" Mode="rw" Description="Path to persist ZeroTier state across restarts of the container. If you don't bind this ZeroTier will generate a new identity every time." Type="Path" Display="always-hide" Required="true" Mask="false"/>
+  <ExtraParams>--device=/dev/net/tun --cap-add=NET_ADMIN --cap-add=SYS_ADMIN</ExtraParams>
+</Containers>
