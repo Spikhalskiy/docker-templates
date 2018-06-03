@@ -29,6 +29,6 @@
   <!-- Variable Mappings -->
   <Config Name="Network ID" Target="NETWORK_ID" Default="" Mode="" Description="Network ID of ZeroTier network to join, could be find on page: https://my.zerotier.com/network" Type="Variable" Display="always-hide" Required="true" Mask="false"/>
   <!-- Volume Mappings -->
-  <Config Name="Config Directory" Target="/var/lib/zerotier-one" Default="/mnt/user/appdata/zerotier/zerotier-one" Mode="rw" Description="Path to persist ZeroTier state across restarts of the container. If you don't bind this ZeroTier will generate a new identity every time." Type="Path" Display="always-hide" Required="true" Mask="false"/>
+  <Config Name="Config Directory" Target="/var/lib/zerotier-one" Default="/mnt/user/appdata/zerotier/zerotier-one" Mode="rw" Description="Path to persist ZeroTier state across restarts of the container. If you don't bind this ZeroTier will generate a new identity every time." Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
   <ExtraParams>--device=/dev/net/tun --cap-add=NET_ADMIN --cap-add=SYS_ADMIN</ExtraParams>
 </Containers>
