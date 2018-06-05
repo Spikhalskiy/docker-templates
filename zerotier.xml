@@ -14,6 +14,7 @@
   <Registry>https://registry.hub.docker.com/u/spikhalskiy/zerotier/</Registry>
   <GitHub>https://github.com/Spikhalskiy/zerotier-unraid-docker.git</GitHub>
   <Repository>spikhalskiy/zerotier</Repository>
+  <BaseImage>alpine:3.5</BaseImage>
   <WebUI></WebUI>
   <Banner>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/images/zerotier_ico.png</Banner>
   <Icon>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/images/zerotier_ico.png</Icon>
