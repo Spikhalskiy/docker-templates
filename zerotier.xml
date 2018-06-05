@@ -10,7 +10,7 @@
   <Overview>
     ZeroTier is a smart programmable Ethernet switch for planet Earth. It replaces the physical LAN/WAN boundary with a virtual one, allowing devices of any type at any location to be managed as if they all reside in the same cloud region or data center. All traffic is encrypted end-to-end and takes the most direct path available for minimum latency and maximum performance.
   </Overview>
-  <Support></Support>
+  <Support>https://lime-technology.com/forums/topic/72030-support-spikhalskiy-zerotier/</Support>
   <Registry>https://registry.hub.docker.com/u/spikhalskiy/zerotier/</Registry>
   <GitHub>https://github.com/Spikhalskiy/zerotier-unraid-docker.git</GitHub>
   <Repository>spikhalskiy/zerotier</Repository>
