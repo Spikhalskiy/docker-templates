@@ -2,13 +2,18 @@
 <Containers>
   <Name>ZeroTier</Name>
   <Description>
-    ZeroTier is a smart programmable Ethernet switch for planet Earth. [br]
-    It replaces the physical LAN/WAN boundary with a virtual one, allowing devices of any type [br]
-    at any location to be managed as if they all reside in the same cloud region or data center. [br]
-    All traffic is encrypted end-to-end and takes the most direct path available for minimum latency and maximum performance.
+  	Zerotier is an open source, cross-platform virtual LAN / VPN. [br]
+    It allows remote access to devices as if they all reside in the same local network. [br]
+    All traffic is encrypted end-to-end and takes the most direct path available for minimum latency and maximum performance, using VPN-like connections. [br]
+    After setting up Zerotier on unRaid and any other devices - a VPN connection will be set up and all connected devices will be available like they are in the same network. [br]
+    SMB shares, TimeMachine will be autodetected and UIs will be available on regular hostnames and ports.
   </Description>
   <Overview>
-    ZeroTier is a smart programmable Ethernet switch for planet Earth. It replaces the physical LAN/WAN boundary with a virtual one, allowing devices of any type at any location to be managed as if they all reside in the same cloud region or data center. All traffic is encrypted end-to-end and takes the most direct path available for minimum latency and maximum performance.
+  	Zerotier is an open source, cross-platform virtual LAN / VPN.
+    It allows remote access to devices as if they all reside in the same local network.
+    All traffic is encrypted end-to-end and takes the most direct path available for minimum latency and maximum performance, using VPN-like connections.
+    After setting up Zerotier on unRaid and any other devices - a VPN connection will be set up and all connected devices will be available like they are in the same network.
+    SMB shares, TimeMachine will be autodetected and UIs will be available on regular hostnames and ports.
   </Overview>
   <Support>https://lime-technology.com/forums/topic/72030-support-spikhalskiy-zerotier/</Support>
   <Registry>https://registry.hub.docker.com/u/spikhalskiy/zerotier/</Registry>
