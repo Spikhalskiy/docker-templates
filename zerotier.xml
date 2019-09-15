@@ -20,14 +20,14 @@
   <Registry>https://registry.hub.docker.com/u/spikhalskiy/zerotier/</Registry>
   <GitHub>https://github.com/Spikhalskiy/zerotier-unraid-docker.git</GitHub>
   <Repository>spikhalskiy/zerotier</Repository>
-  <BaseImage>alpine:3.5</BaseImage>
+  <BaseImage>alpine:3.10.2</BaseImage>
   <WebUI></WebUI>
   <Banner>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/images/zerotier_ico.png</Banner>
   <Icon>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/images/zerotier_ico.png</Icon>
   <Beta>False</Beta>
   <Category>Network:DNS Network:Management Network:Other</Category>
-  <Date>2019-08-16</Date>
-  <Version>1.2.12</Version>
+  <Date>2019-09-14</Date>
+  <Version>1.4.6</Version>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Networking>
@@ -39,11 +39,13 @@
   <Config Name="Config Directory" Target="/var/lib/zerotier-one" Default="/mnt/user/appdata/zerotier/zerotier-one" Mode="rw" Description="Path to persist ZeroTier state across restarts of the container. If you don't bind this ZeroTier will generate a new identity every time." Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
   <ExtraParams>--device=/dev/net/tun --cap-add=NET_ADMIN --cap-add=SYS_ADMIN</ExtraParams>
   <Changes>
-    [center][font size=5]Change Log[/font][/center]
-    [font size=4]2018.06.04[/font]
-    - Initial Release with Zerotier 1.2.4
+    [font size=4]2019.09.14[/font]
+    - Update to Zerotier 1.4.6
 
     [font size=4]2019.08.16[/font]
     - Update to Zerotier 1.2.12
+
+    [font size=4]2018.06.04[/font]
+    - Initial Release with Zerotier 1.2.4
   </Changes>
 </Containers>
