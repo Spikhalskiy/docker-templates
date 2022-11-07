@@ -20,14 +20,14 @@
   <Registry>https://registry.hub.docker.com/u/spikhalskiy/zerotier/</Registry>
   <GitHub>https://github.com/Spikhalskiy/zerotier-unraid-docker.git</GitHub>
   <Repository>spikhalskiy/zerotier</Repository>
-  <BaseImage>frolvlad/alpine-glibc:alpine-3.12_glibc-2.32</BaseImage>
+  <BaseImage>alpine:edge</BaseImage>
   <WebUI></WebUI>
   <Banner>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/images/zerotier_ico.png</Banner>
   <Icon>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/images/zerotier_ico.png</Icon>
   <Beta>False</Beta>
   <Category>Network:DNS Network:Management Network:VPN</Category>
-  <Date>2020-12-04</Date>
-  <Version>1.6.2</Version>
+  <Date>2022-11-07</Date>
+  <Version>1.10.2</Version>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Networking>
