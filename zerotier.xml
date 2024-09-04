@@ -24,8 +24,8 @@
   <Icon>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/images/zerotier_ico.png</Icon>
   <Beta>False</Beta>
   <Category>Network:DNS Network:Management Network:VPN</Category>
-  <Date>2023-08-26</Date>
-  <Version>1.12.0</Version>
+  <Date>2024-09-04</Date>
+  <Version>1.14.0</Version>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Networking>
@@ -37,6 +37,9 @@
   <Config Name="Config Directory" Target="/var/lib/zerotier-one" Default="/mnt/user/appdata/zerotier/zerotier-one" Mode="rw" Description="Path to persist ZeroTier state across restarts of the container. If you don't bind this ZeroTier will generate a new identity every time." Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
   <ExtraParams>--device=/dev/net/tun --cap-add=NET_ADMIN --cap-add=SYS_ADMIN</ExtraParams>
   <Changes>
+    [font size=4]2024.09.04[/font]
+    - Update to Zerotier 1.14.0
+
     [font size=4]2023.08.24[/font]
     - Update to Zerotier 1.12.0
 
